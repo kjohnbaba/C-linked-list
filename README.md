@@ -13,3 +13,8 @@ delete n Removes an integer n from the list. If n is not present in the list, it
 instruction format is a d followed by a space and an integer n.
 After each command, list will print the length of the list followed by the contents of the list, in
 order from first (least) to last (greatest)
+
+Input format: Each line of the input contains an instruction. Each line begins with a letter (either
+“i” or “d”), followed by a space, and then an integer. A line beginning with “i” indicates that the
+integer should be inserted into the list. A line beginning with “d” indicates that the integer should
+be deleted from the list
