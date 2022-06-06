@@ -1,12 +1,9 @@
 #include <stdio.h>
 #include<stdlib.h>
 
-struct structure
-{
+struct structure{
     int val;
-    
-    struct structure *next;
-    
+    struct structure *next;  
 };
 struct structure *ptr = NULL;
 struct structure *head = NULL;
@@ -14,15 +11,12 @@ struct structure *curr = NULL;
 
 struct structure* create_list(int val, struct structure *ptr)
 {
-  
-
     if(NULL == ptr)
     {
         return NULL;
     }
     ptr->val = val;
     ptr->next = NULL;
-
     head = curr = ptr;
     return ptr;
 }
@@ -41,10 +35,8 @@ struct structure* add_to_list(int val)
     }
     ptr->val = val;
     ptr->next = NULL;
-  
         curr->next = ptr;
         curr = ptr;
-
     return ptr;
 }
 
@@ -207,10 +199,9 @@ void nodefree(struct structure * start) {
 		ptr = start;
 	}
 }
-int main(){
-    scanner();
-    
-nodefree(ptr);
+int main(){	
+  scanner();
+  nodefree(ptr);
 return 0;
 
 }
