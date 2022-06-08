@@ -7,9 +7,9 @@ received from standard input. The linked list is maintained in order, meaning th
 list are stored in increasing numeric order after every operation.
 
 List supports two operations:
-insert n Adds an integer n to the list. If n is already present in the list, it does nothing. The
+insert n adds an integer n to the list. If n is already present in the list, it does nothing. The
 instruction format is an i followed by a space and an integer n.
-delete n Removes an integer n from the list. If n is not present in the list, it does nothing. The
+delete n removes an integer n from the list. If n is not present in the list, it does nothing. The
 instruction format is a d followed by a space and an integer n.
 After each command, list will print the length of the list followed by the contents of the list, in
 order from first (least) to last (greatest)
