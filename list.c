@@ -39,13 +39,11 @@ struct structure* add_to_list(int val)
         curr = ptr;
     return ptr;
 }
-
 struct structure* search_in_list(int val, struct structure **prev)
 {
     struct structure *ptr = head;
     struct structure *tmp = NULL;
     int found = 0;
-
     while(ptr != NULL)
     {
         if(ptr->val == val)
@@ -104,7 +102,6 @@ int delete_from_list(int val)
         if(del == head)
         {
             head = del->next;
-            
         }
     }
 
@@ -112,7 +109,6 @@ int delete_from_list(int val)
     del = NULL;
     return 0;
 }
-
 
 void swap(struct structure *a, struct structure *b)
 {
@@ -149,7 +145,6 @@ void bubbleSort(struct structure *start)
     }
     while (swapped);
 }
-
 void print_list(void)
 {
     struct structure *ptr = head;
@@ -166,8 +161,6 @@ void print_list(void)
 
     return;
 }
-
-
 void scanner(){
     char mode;
     int number;
