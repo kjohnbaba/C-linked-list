@@ -1,6 +1,6 @@
 # C-linked-list
 
-Made as homework for cs comp arch class
+Made as homework for Rutgers cs211 comp arch class
 
 C program that maintains and manipulates a sorted linked list according to instructions
 received from standard input. The linked list is maintained in order, meaning that the items in the
