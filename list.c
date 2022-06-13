@@ -5,12 +5,12 @@ struct structure{
     int val;
     struct structure *next;  
 };
+
 struct structure *ptr = NULL;
 struct structure *head = NULL;
 struct structure *curr = NULL;
 
-struct structure* create_list(int val, struct structure *ptr)
-{
+struct structure* create_list(int val, struct structure *ptr){
     if(NULL == ptr)
     {
         return NULL;
@@ -21,8 +21,7 @@ struct structure* create_list(int val, struct structure *ptr)
     return ptr;
 }
 
-struct structure* add_to_list(int val)
-{
+struct structure* add_to_list(int val){
        ptr = (struct structure*)malloc(sizeof(struct structure));
 
     if(NULL == head)
@@ -39,8 +38,7 @@ struct structure* add_to_list(int val)
         curr = ptr;
     return ptr;
 }
-struct structure* search_in_list(int val, struct structure **prev)
-{
+struct structure* search_in_list(int val, struct structure **prev){
     struct structure *ptr = head;
     struct structure *tmp = NULL;
     int found = 0;
