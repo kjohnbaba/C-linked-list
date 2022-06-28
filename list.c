@@ -152,7 +152,7 @@ void print_list(void)
     while(ptr != NULL)
     {
          bubbleSort(ptr);
-        printf(" %d",ptr->val);   //  "5 6 7 "   "5 6 7"   // NUMBerS PRECEDED BY SPACES
+        printf(" %d",ptr->val);   //  "5 6 7 "   "5 6 7"   
         ptr = ptr->next;
     }
     printf("\n");
@@ -163,8 +163,6 @@ void scanner(){
     char mode;
     int number;
     
-	// BURAYA IF "^D" EXIT PROGRAM KOY
-
   
     int plsno = scanf( "%c %d", &mode, &number);
     if (plsno == EOF) exit(0);
